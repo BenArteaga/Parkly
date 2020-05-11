@@ -14,6 +14,8 @@
 		85F569D62469BF7C00843985 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85F569D42469BF7C00843985 /* LaunchScreen.storyboard */; };
 		85F569E12469BF7C00843985 /* ParklyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F569E02469BF7C00843985 /* ParklyTests.swift */; };
 		85F569EC2469BF7C00843985 /* ParklyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F569EB2469BF7C00843985 /* ParklyUITests.swift */; };
+		85F56A002469C49600843985 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F569FF2469C49600843985 /* RoundButton.swift */; };
+		85F56A022469C90600843985 /* ParkingSpot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F56A012469C90600843985 /* ParkingSpot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		85F569E72469BF7C00843985 /* ParklyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParklyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		85F569EB2469BF7C00843985 /* ParklyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParklyUITests.swift; sourceTree = "<group>"; };
 		85F569ED2469BF7C00843985 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85F569FF2469C49600843985 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		85F56A012469C90600843985 /* ParkingSpot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingSpot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,9 @@
 		85F569CA2469BF7600843985 /* Parkly */ = {
 			isa = PBXGroup;
 			children = (
+				85F569FC2469C43A00843985 /* Model */,
+				85F569FB2469C43400843985 /* View */,
+				85F569FA2469C42A00843985 /* Controller */,
 				85F569CB2469BF7600843985 /* AppDelegate.swift */,
 				85F569CD2469BF7600843985 /* ViewController.swift */,
 				85F569CF2469BF7600843985 /* Main.storyboard */,
@@ -123,6 +130,29 @@
 				85F569ED2469BF7C00843985 /* Info.plist */,
 			);
 			path = ParklyUITests;
+			sourceTree = "<group>";
+		};
+		85F569FA2469C42A00843985 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		85F569FB2469C43400843985 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				85F569FF2469C49600843985 /* RoundButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		85F569FC2469C43A00843985 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				85F56A012469C90600843985 /* ParkingSpot.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +286,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85F56A002469C49600843985 /* RoundButton.swift in Sources */,
 				85F569CE2469BF7600843985 /* ViewController.swift in Sources */,
+				85F56A022469C90600843985 /* ParkingSpot.swift in Sources */,
 				85F569CC2469BF7600843985 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
