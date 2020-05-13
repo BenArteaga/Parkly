@@ -16,6 +16,7 @@
 		85F569EC2469BF7C00843985 /* ParklyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F569EB2469BF7C00843985 /* ParklyUITests.swift */; };
 		85F56A002469C49600843985 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F569FF2469C49600843985 /* RoundButton.swift */; };
 		85F56A022469C90600843985 /* ParkingSpot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F56A012469C90600843985 /* ParkingSpot.swift */; };
+		85F56A05246AFE9B00843985 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F56A04246AFE9B00843985 /* LocationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		85F569ED2469BF7C00843985 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85F569FF2469C49600843985 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		85F56A012469C90600843985 /* ParkingSpot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingSpot.swift; sourceTree = "<group>"; };
+		85F56A04246AFE9B00843985 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		85F569CA2469BF7600843985 /* Parkly */ = {
 			isa = PBXGroup;
 			children = (
+				85F56A03246AFE7500843985 /* Services */,
 				85F569FC2469C43A00843985 /* Model */,
 				85F569FB2469C43400843985 /* View */,
 				85F569FA2469C42A00843985 /* Controller */,
@@ -153,6 +156,14 @@
 				85F56A012469C90600843985 /* ParkingSpot.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		85F56A03246AFE7500843985 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				85F56A04246AFE9B00843985 /* LocationService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +299,7 @@
 			files = (
 				85F56A002469C49600843985 /* RoundButton.swift in Sources */,
 				85F569CE2469BF7600843985 /* ViewController.swift in Sources */,
+				85F56A05246AFE9B00843985 /* LocationService.swift in Sources */,
 				85F56A022469C90600843985 /* ParkingSpot.swift in Sources */,
 				85F569CC2469BF7600843985 /* AppDelegate.swift in Sources */,
 			);
@@ -463,6 +475,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y3DAPHRXQ3;
 				INFOPLIST_FILE = Parkly/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -480,6 +493,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y3DAPHRXQ3;
 				INFOPLIST_FILE = Parkly/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
