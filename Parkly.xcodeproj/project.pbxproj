@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85F0B2A2246C61A2009C3B54 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F0B2A1246C61A2009C3B54 /* DataService.swift */; };
 		85F569CC2469BF7600843985 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F569CB2469BF7600843985 /* AppDelegate.swift */; };
 		85F569CE2469BF7600843985 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F569CD2469BF7600843985 /* ViewController.swift */; };
 		85F569D12469BF7600843985 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85F569CF2469BF7600843985 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		85F0B2A1246C61A2009C3B54 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		85F569C82469BF7600843985 /* Parkly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parkly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85F569CB2469BF7600843985 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85F569CD2469BF7600843985 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				85F56A04246AFE9B00843985 /* LocationService.swift */,
+				85F0B2A1246C61A2009C3B54 /* DataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				85F56A002469C49600843985 /* RoundButton.swift in Sources */,
 				85F569CE2469BF7600843985 /* ViewController.swift in Sources */,
 				85F56A05246AFE9B00843985 /* LocationService.swift in Sources */,
+				85F0B2A2246C61A2009C3B54 /* DataService.swift in Sources */,
 				85F56A022469C90600843985 /* ParkingSpot.swift in Sources */,
 				85F569CC2469BF7600843985 /* AppDelegate.swift in Sources */,
 			);

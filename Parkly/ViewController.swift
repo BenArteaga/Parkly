@@ -23,14 +23,24 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         mapView.delegate = self as? MKMapViewDelegate
         checkLocationAuthorizationStatus()
+        DataService.instance.loadCarIsFound()
+        if DataService.instance.carIsFound == false {
+            DataService.instance.loadSpot()
+            mapView.addAnnotation(DataService.instance.loadedParkingSpot)
+            RoundButton.setImage(UIImage(named: "foundCar.png"), for: .normal)
+        }
+        
     }
 
     @IBAction func parkBtnWasPressed(_ sender: RoundButton) {
         if mapView.annotations.count == 1 {
-            mapView.addAnnotation(parkedCarAnnotation!)
+            DataService.instance.dropPin(spot_in: parkedCarAnnotation!)
+            DataService.instance.setCarIsFound(isFound: false)
+            mapView.addAnnotation(DataService.instance.loadedParkingSpot)
             RoundButton.setImage(UIImage(named: "foundCar.png"), for: .normal)
         }
         else {
+            DataService.instance.setCarIsFound(isFound: true)
             mapView.removeAnnotations(mapView.annotations)
             RoundButton.setImage(UIImage(named: "parkCar.png"), for: .normal)
         }

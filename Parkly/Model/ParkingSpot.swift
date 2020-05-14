@@ -10,7 +10,7 @@ import UIKit
 import MapKit
 import Contacts
 
-class ParkingSpot: NSObject, MKAnnotation {
+class ParkingSpot: NSObject, MKAnnotation, NSCoding {
     let title: String?
     let locationName: String?
     let coordinate: CLLocationCoordinate2D
@@ -33,5 +33,34 @@ class ParkingSpot: NSObject, MKAnnotation {
         mapItem.name = title
         return mapItem
     }
-
+    
+    required init?(coder aDecoder: NSCoder) {
+        title = aDecoder.decodeObject(forKey: "titleKey") as? String
+        locationName = aDecoder.decodeObject(forKey: "locationKey") as? String
+        let latitude = aDecoder.decodeDouble(forKey: "latitudeKey")
+        let longitude = aDecoder.decodeDouble(forKey: "longitudeKey")
+        coordinate = CLLocationCoordinate2D(latitude: latitude , longitude: longitude )
+    }
+    
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(title, forKey: "titleKey")
+        aCoder.encode(locationName, forKey: "locationKey")
+        aCoder.encode(coordinate.latitude, forKey: "latitudeKey")
+        aCoder.encode(coordinate.longitude, forKey: "longitudeKey")
+    }
 }
+
+//extension ParkingSpot {
+//    convenience init(dict: [String: AnyObject]) {
+//        self.init(title: dict["titleKey"] as! String, locationName: dict["locationKey"] as! String, coordinate: dict["coordinateKey"] as! CLLocationCoordinate2D)
+//    }
+//
+//    //function to turn a parking spot into a dictionary so that it can be stored into User Defaults via NSDictionary
+//    func toDic() -> [String: AnyObject] {
+//        var dic = [String: AnyObject] ()
+//        dic["titleKey"] = title as AnyObject
+//        dic["locationKey"] = locationName as AnyObject
+//        dic["coordinateKey"] = coordinate as AnyObject
+//        return dic
+//    }
+//}
